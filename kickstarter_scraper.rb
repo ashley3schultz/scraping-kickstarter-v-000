@@ -17,6 +17,8 @@ def create_project_hash
       percent_funded = project.css("ul.project-stats strong").text
       
       project.css("ls.first funded strong").text
+      
+      project.css("div.project-pledged-wrap ul.project-stats strong").text
   }
 end
 create_project_hash
