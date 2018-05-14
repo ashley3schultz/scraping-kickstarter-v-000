@@ -18,7 +18,7 @@ def create_project_hash
       
       project.css("ls.first funded strong").text
       
-      project.css("ul.project-stats ls strong").text
+      project.css("ul.project-stats ls").text
   }
 end
 create_project_hash
