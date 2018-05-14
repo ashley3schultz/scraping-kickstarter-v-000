@@ -15,6 +15,8 @@ def create_project_hash
       description = project.css("p.bbcard_blurb").text
       location = project.css("ul.project-meta span").text
       percent_funded = project.css("ul.project-stats strong").text
+      
+      project.css("ls.first-funded strong").text
   }
 end
 create_project_hash
