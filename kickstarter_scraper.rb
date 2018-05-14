@@ -4,7 +4,7 @@ require 'pry'
 
 
 def create_project_hash
-  project_hash = {}
+  projects = {}
   html = File.read('fixtures/kickstarter.html')
   kickstarter = Nokogiri::HTML(html)
   list = kickstarter.css("li.project.grid_4")
