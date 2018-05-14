@@ -16,9 +16,7 @@ def create_project_hash
       location = project.css("ul.project-meta span").text
       percent_funded = project.css("ul.project-stats strong").text
       
-      project.css("ls.first funded strong").text
-      
-      project.css("ul.project-stats ls").text
+      project.css("ul.project-stats strong").text
   }
 end
 create_project_hash
